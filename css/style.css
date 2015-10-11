@@ -1,18 +1,89 @@
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%
+    overflow-x: hidden; 
+    padding: 0px;
+}
+
+#wrapper {
+  /*background: -moz-linear-gradient(black, #06132b); /* For Firefox 3.6 to 15 */
+
+}
+
 body {
+
+  margin: 0px;
+  padding: 0px;
   overflow: auto;
-  background: #06132b;
-  background: -moz-linear-gradient(black, #06132b); /* For Firefox 3.6 to 15 */
+  background-color: #06132b;
   font-family: 'Abel', sans-serif;
+  font-size: 14px;
+  height: 100%;
+  width: 100%
+
+}
+
+#About {
+  background: #f1f1f1;
+  padding-bottom: 50px;
 }
 
 
-h1 {
-	color: #FFFFFF;
+#OfficersTable {
+ 
+}
 
+#Info {
+  background: #f1f1f1;
+
+  height: 100%;
+}
+
+#Officers {
+  background-color: #323a45;
+  height: 100%;
+  width: 100%;
+
+}
+
+#About {
+  height: 100%;
+  width: 100%;
+}
+
+#PO{
+  margin-bottom: -5px;
+}
+
+#Meeting{
+
+}
+
+#ClearSky {
+  height: 100%;
+  width: 100%;
+  background-color: #000000
+}
+
+#col{
+  margin-top: 50px;
+}
+
+h1 {
+	margin-top: 50px;
+  margin-bottom: 5px;
 }
 
 canvas {
 	z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  margin-top: 50%;
+
 }
 
 .nav-wrapper{
@@ -24,7 +95,7 @@ canvas {
 	text-align: center;
 	width: 50%;
 	left: 25%;
-	top: 40%;
+	top: 10%;
 	margin-top: -25px; 
 	
 	/*color: #7EA7D8;*/
@@ -33,117 +104,22 @@ canvas {
 	font-size: 50px;
 }
 
-#para1 {
-  background-color: #BF381A;
+
+tbody {
+  font-size: 200%;
 }
 
-.arrowButton {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
-  -webkit-font-smoothing: antialiased;
-  -webkit-user-select: none;
-  background-color: #7EA7D8;
-  background-image: none;
-  border-bottom-color: #cccccc;
-  border-bottom-left-radius: 100%;
-  border-bottom-right-radius: 100%;
-  border-bottom-style: none;
-  border-bottom-width: 0px;
-  border-image-outset: 0px;
-  border-image-repeat: stretch;
-  border-image-slice: 100%;
-  border-image-source: none;
-  border-image-width: 1;
-  border-left-color: #cccccc;
-  border-left-style: none;
-  border-left-width: 0px;
-  border-right-color: #cccccc;
-  border-right-style: none;
-  border-right-width: 0px;
-  border-top-color: #cccccc;
-  border-top-left-radius: 100%;
-  border-top-right-radius: 100%;
-  border-top-style: none;
-  border-top-width: 0px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
-  box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px 0px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  color: white;
-  display: block;
-  font-size: 26px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  height: 70px;
-  line-height: 26px;
-  margin-left: auto;
-  margin-right: 15px;
-  outline-color: white;
-  outline-style: none;
-  outline-width: 0px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  position: relative;
-  top: -145px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  vertical-align: middle;
-  white-space: nowrap;
-  width: 70px;
-  z-index: 100; }
+td {
+  padding: 25px; 
+}
 
-.arrowButton.showcase {
-    top: -90px;
-    margin-top: -60px; }
+p {
+  font-size: 175%;
+  padding: 25px;
+  margin: 5px;
+}
 
-@media screen and (min-width: 375px) {
-      .arrowButton.showcase {
-        top: -105px;
-        margin-top: -70px; } }
-@media screen and (min-width: 768px) {
-      .arrowButton.showcase {
-        top: -55px;
-        margin-top: -70px; } }
-.arrowButton.protected {
-    top: -90px;
-    margin-top: -60px; }
-@media screen and (min-width: 375px) {
-	.arrowButton.protected {
-        top: -105px;
-        margin-top: -70px; } }
-@media screen and (min-width: 768px) {
-      .arrowButton.protected {
-        top: -55px;
-        margin-top: -70px; } }
-.arrowButton:hover {
-    background-color: #7EA7D8; }
-@media screen and (min-width: 375px) {
-    .arrowButton {
-      top: -150px; } }
-@media screen and (min-width: 768px) {
-    .arrowButton {
-      margin-right: auto; } }
-@media screen and (min-width: 860px) {
-    .arrowButton {
-      top: -90px; } }
 
-.Chevron {
-  position: relative;
-  display: block;
-  left: 5px;
-  top: 12px;
-  height: 30px;
-  /*height should be double border below*/ }
 
-.Chevron:before, .Chevron:after {
-  position: absolute;
-  display: block;
-  content: "";
-  border: 15px solid transparent;
-  /*adjust size*/ }
 
 

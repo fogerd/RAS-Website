@@ -56,8 +56,8 @@ stats.setMode(0);
             this.x = Math.random() * canvas.width;
             this.y = Math.random() * canvas.height;
 
-            this.vx = (config.velocity - (Math.random() * 0.3));
-            this.vy = (config.velocity - (Math.random() * 0.3));
+            this.vx = (config.velocity - (Math.random() * 0.2));
+            this.vy = (config.velocity - (Math.random() * 0.2));
 
             this.radius = Math.random() * config.star.width;
         }
