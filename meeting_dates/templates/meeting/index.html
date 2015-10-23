@@ -3,12 +3,10 @@
 	<head>
 		<title>Home :: Rensselaer Astrophysical Society</title>
 	  <!-- Compiled and minified JavaScript -->
-
+	  	{% load static %}
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
-		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 		
-
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
@@ -24,11 +22,8 @@
 			<div>
 	        	<h1 id="title"> Rensselaer Astrophysical Society </h1>
 	        	
-	        	<a href="#tits" class="navlinks"   id="scroll-to-moon"> <img src="arrow-down.png" style="width:10%;height:10%;">  </a>
+	        	<a href="#tits" class="navlinks"   id="scroll-to-moon"> <img src="{% static 'arrow-down.png' %}" style="width:10%;height:10%;">  </a>
 	        </div>
-
-			
-
 
     	</div>
 
@@ -63,7 +58,7 @@
 					      	<div id="fuck">
 					      	<h5> <i class="small material-icons orange600"> room </i> JROWL 2nd Floor Conference Room  </h5><h4>  </h4>
 					      	<h5> <i class="small material-icons orange600"> today </i> {{ meeting_date }}</h5>
-					      	<h5> <i class="small material-icons orange600"> schedule </i> {{ meeting.meeting_time }}</h5>
+					      	<h5> <i class="small material-icons orange600"> schedule </i> {{ meeting_time }}</h5>
 					      	</div>
 				      	</div>
 
@@ -187,13 +182,13 @@
     	</div> -->
 
 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/scrolling.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="{% static 'js/scrolling.js' %}"></script>
 
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js"></script>
-		<script type="text/javascript" src="javaScript/nav.js"></script>
-		<script type="text/javascript" src="javaScript/canvas.js"></script>
+		<script type="text/javascript" src="{% static 'javaScript/nav.js' %}"></script>
+		<script type="text/javascript" src="{% static 'javaScript/canvas.js' %}"></script>
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
 
