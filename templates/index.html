@@ -6,6 +6,7 @@
 	  	{% load static %}
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
 		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+		
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
@@ -16,7 +17,7 @@
 
 		<div id="wrapper">
 
-			<canvas class=".hide-on-small-only"></canvas>
+			<canvas class=".hide-on-small-only"> </canvas>
 
 			<div>
 	        	<h1 id="title"> Rensselaer Astrophysical Society </h1>
@@ -56,8 +57,8 @@
 					      	<h2> Club Meeting </h2>
 					      	<div id="fuck">
 					      	<h5> <i class="small material-icons orange600"> room </i> JROWL 2nd Floor Conference Room  </h5><h4>  </h4>
-					      	<h5> <i class="small material-icons orange600"> today </i> {{ meeting.meeting_date }}</h5>
-					      	<h5> <i class="small material-icons orange600"> schedule </i> {{ meeting.meeting_time }}</h5>
+					      	<h5> <i class="small material-icons orange600"> today </i> {{ meeting_date }}</h5>
+					      	<h5> <i class="small material-icons orange600"> schedule </i> {{ meeting_time }}</h5>
 					      	</div>
 				      	</div>
 
@@ -89,33 +90,28 @@
 									        <tbody>
 									          <tr>
 									            <td> <b> President </b> </td>
-									            <td> Fuck </td>
-									            
-									            <td>bonin@rpi.edu</td>
+									            <td> {{ president }} </td>
+									            <td> {{ president_email }}</td>
 									          </tr>
 									          <tr>
 									            <td> <b> Vice President </b> </td>
-									            <td>Joey McPherson</td>
-									            
-									            <td>mcphej4@rpi.edu </td>
+									            <td> {{ vice_president }} </td>
+									            <td> {{ vice_president_email }} </td>
 									          </tr>
 									          <tr>
-									        <td> <b> Treasurer </b> </td>
-									            <td>Jonathan Williams</td>
-									                
-									            <td>willij19@rpi.edu</td>
+									        	<td> <b> Treasurer </b> </td>
+									            <td> {{ treasurer }} </td>
+									            <td> {{ treasurer_email }} </td>
 									          </tr>
 									          <tr>
 									            <td> <b> Secretary </b></td>
-									            <td>Emily Wislowski</td>
-									            
-									            <td>wisloe@rpi.edu </td>
+									            <td> {{ secretary }} </td>
+									            <td> {{ secretary_email }} </td>
 									          </tr>
 									          <tr>
 									            <td> <b> Webmaster </b></td>
-									            <td>Dennis Fogerty</td>
-
-									            <td> fogerd@rpi.edu </td>
+									            <td> {{ webmaster }} </td>
+									            <td> {{ webmaster_email }} </td>
 									          </tr>
 									        </tbody>
 								    	</table>
@@ -180,6 +176,9 @@
 	      </ul>
     	</div> -->
 
+
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js"></script>
 
 		<script type="text/javascript" src="{% static 'js/canvas.js' %}"></script>
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
